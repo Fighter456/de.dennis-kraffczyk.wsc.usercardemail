@@ -4,10 +4,10 @@
 		<!-- de.dennis-kraffczyk.wsc.usercardemail -->
 		<packagename>User Card: E Mail</packagename>
 		<packagename language="de">UserCard: E-Mail</packagename>
-		<packagedescription>Extends the quick view of an user with their email address.</packagedescription>
+		<packagedescription>Extends the quick view of a user with their email address.</packagedescription>
 		<packagedescription language="de">Erweitert die Schnellvorschau eines Benutzerprofils um die E-Mail - Adresse.</packagedescription>
 		<version>1.0.0</version>
-		<date>2026-04-05</date>
+		<date>2026-04-18</date>
 		<license>LGPL</license>
 	</packageinformation>
 	<authorinformation>
