@@ -9,5 +9,6 @@ jobs:
                           uses: KittMedia/action-wsc-package-create@main
                         - uses: actions/upload-artifact@v7
                           with:
+                                  archive: 'false'
                                   name: ${{ github.event.repository.name }}.tar.gz
                                   path: ${{ github.event.repository.name }}.tar.gz
