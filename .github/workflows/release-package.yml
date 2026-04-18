@@ -1,0 +1,22 @@
+name: release package
+on:
+        push:
+                tags:
+                        - 'v*'
+jobs:
+        release:
+                name: create release
+                runs-on: ubuntu-latest
+                permissions:
+                        contents: write
+                steps:
+                        - uses: actions/checkout@v6
+                        - name: WoltLab Suite Package Creation
+                          uses: KittMedia/action-wsc-package-create@main
+                        # Create release
+                        - name: Create Release
+                          id: create_release
+                          uses: softprops/action-gh-release@v2
+                          with:
+                                  files: ${{ github.event.repository.name }}.tar.gz
+                                  name: Release ${{ github.ref_name }}
